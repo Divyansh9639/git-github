@@ -37,12 +37,12 @@ public class StudentController {
 		return "welcome";
 	}
 	
-	@GetMapping("/find")
-	public String fetchRecordsById(@RequestParam int id,ModelMap model) {
-		Optional<Student> student1=studentRepo.findById(id);
-		Student student2=student1.get();
-		model.put("name", student2.getName());
-		model.put("subject", student2.getSubject());
-		return "find";
-	}
+//	@GetMapping("/find")
+//	public String fetchRecordsById(@RequestParam int id,ModelMap model) {
+//		Optional<Student> student1=studentRepo.findById(id);
+//		Student student2=student1.get();
+//		model.put("name", student2.getName());
+//		model.put("subject", student2.getSubject());
+//		return "find";
+//	}
 }
